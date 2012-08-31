@@ -2,6 +2,17 @@
 	<head>
 		<title>Menú</title>
 		<link type="text/css" href="<?php echo base_url();?>css/cssMenu.css" rel="stylesheet"/>
+		<script type="text/javascript" src="<?php echo base_url();?>js/jquery.js"></script>
+		<script type="text/javascript">
+		
+			$(document).ready(function(){
+				$("btnDonadores").click(function(){
+					alert('hola!');
+					//window.location.href = "<?php echo base_url();?>index.php/controlMenu/donadores";
+				});
+			});
+			
+		</script>
 	</head>
 	<body>
 		<label for="txtBienvenido" id="txtBienvenido">¡Bienvenido, Usuario!</h1>
